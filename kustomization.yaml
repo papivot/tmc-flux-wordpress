@@ -39,7 +39,8 @@ patches:
       value: wordpress.navneetv.com
 
 resources:
+  - namespace.yaml
+  - certificate.yaml
   - mysql-deployment.yaml
   - wordpress-deployment.yaml
-  - certificate.yaml
   - httpproxy.yaml
