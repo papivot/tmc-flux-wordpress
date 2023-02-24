@@ -1,5 +1,5 @@
 apiVersion: cert-manager.io/v1
-kind: ClusterIssuer
+kind: Issuer
 metadata:
   name: ca-issuer-selfsigned
 spec:
@@ -15,5 +15,5 @@ spec:
   - foo.bar.com
   issuerRef:
     name: ca-issuer-selfsigned
-    kind: ClusterIssuer
+    kind: Issuer
   secretName: wordpress-tls
